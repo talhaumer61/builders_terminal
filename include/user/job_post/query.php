@@ -55,12 +55,12 @@ if(isset($_POST['submit_add'])) {
 		try {
 			//Server settings
 			$mail->isSMTP();                                            // Send using SMTP
-			$mail->Host       = 'smtp.hostinger.com';                   // Set the SMTP server to send through
+			                // Set the SMTP server to send through
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-			$mail->Username   = 'info@buildersterminal.com';            // SMTP username (your Hostinger email address)
-			$mail->Password   = 'Buildersterminal@123';                  // SMTP password
+			           // SMTP username (your Hostinger email address)
+			                 // SMTP password
 			$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption
-			$mail->Port       = 587;                                    // TCP port to connect to
+			                        // TCP port to connect to
 
 			//Recipients
 			$mail->setFrom('info@buildersterminal.com', 'Builders Terminal');   // Your Hostinger email address
